@@ -28,18 +28,6 @@
           <input id="age" class="form-control" type="number">
         </div>
 
-        <!-- desired work environment -->
-        <div class="form-group">
-          <label for="environment">Desired work environment:*</label>
-          <select id="environment" id="validationDefault01" class="form-control" required>
-            <option></option>
-            <option value="enterprise">Enterprise company</option>
-            <option value="startup">Startup</option>
-            <option value="agency">Digital agency</option>
-            <option value="freelance">Freelance</option>
-          </select>
-        </div>
-
         <!-- most interesting platform -->
         <div class="form-group">
           <label for="platform">What platform is most interesting to you:*</label>
@@ -49,6 +37,18 @@
             <option value="mobile">Mobile Devices</option>
             <option value="internal">Internal software for large companies</option>
             <option value="embedded">Embedded software for electronics</option>
+          </select>
+        </div>
+
+        <!-- desired work environment -->
+        <div class="form-group">
+          <label for="environment">Desired work environment:*</label>
+          <select id="environment" id="validationDefault01" class="form-control" required>
+            <option></option>
+            <option value="enterprise">Enterprise company</option>
+            <option value="startup">Startup</option>
+            <option value="agency">Digital agency</option>
+            <option value="freelance">Freelance</option>
           </select>
         </div>
 
@@ -113,17 +113,6 @@
       <div id="resource-survey">
         <form id="survey2">
           <h4>Now let's find some resources!</h4>
-          <!-- schedule/availability -->
-          <div class="form-group">
-            <label for="schedule">How much time are you currently able to dedicate to programming:</label>
-            <select id="schedule" id="validationDefault01" class="form-control" required>
-              <option></option>
-              <option value="less-ten">less than 10 hrs/week</option>
-              <option value="ten-twenty">10-20 hrs/week</option>
-              <option value="twenty-forty">20-40 hrs/week</option>
-              <option value="more-forty">more than 40 hrs/week</option>
-            </select>
-          </div>
 
           <!-- career change or new skills -->
           <div class="form-group">
@@ -144,18 +133,24 @@
 
             <div class="radio">
               <label>
-                <input type="radio" name="skillset" value="hobby">
-                  Develop new hobby
-              </label>
-            </div>
-
-            <div class="radio">
-              <label>
                 <input type="radio" name="skillset" value="curious">
                   Just curious
               </label>
             </div>
           </div>
+
+          <!-- schedule/availability -->
+          <div class="form-group">
+            <label for="schedule">How much time are you currently able to dedicate to programming:</label>
+            <select id="schedule" id="validationDefault01" class="form-control" required>
+              <option></option>
+              <option value="less-ten">less than 10 hrs/week</option>
+              <option value="ten-twenty">10-20 hrs/week</option>
+              <option value="twenty-forty">20-40 hrs/week</option>
+              <option value="more-forty">more than 40 hrs/week</option>
+            </select>
+          </div>
+
 
           <!-- experience -->
           <div class="form-group">
@@ -174,8 +169,22 @@
 
 
 
-      <div class="resource">
+      <div class="resource" id="bootcamp">
+        <h5>Development Bootcamp</h5>
       </div>
+
+      <div class="resource" id="books">
+        <h5>Computer Science Books</h5>
+      </div>
+
+      <div class="resource" id="online">
+        <h5>Online Courses</h5>
+      </div>
+
+      <div class="resource" id="networking">
+        <h5>Networking</h5>
+      </div>
+
 
     </div>
   </body>

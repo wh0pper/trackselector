@@ -9,6 +9,15 @@ body {
   border-radius: 3px;
   padding: 10px;
   margin: 10px;
+  display: none;
+  box-shadow: 1px 1px 10px #D3D3D3;
+}
+
+.resource {
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
   /* display: none; */
   box-shadow: 1px 1px 10px #D3D3D3;
 }
@@ -20,7 +29,7 @@ form {
 }
 
 #resource-survey {
-  display: none;
+  /* display: none; */
 }
 
 #age-message {
