@@ -46,39 +46,40 @@ $(document).ready(function() {
         $("#java").show();
       } else if (skillset === "creative") {
         $("#design").show();
-      } else {
-        $("#research").show();
       }
     } else {
       $("#research").show();
     }
 
-    $("#resource-survey").show();
+    $("#resource-survey").slideDown();
   });
 
   $("form#survey2").submit(function(event) {
     event.preventDefault();
+
+    $(".resource").hide();
     var goal = $("input:radio[name=goal]:checked").val();
     var schedule = $("select#schedule").val();
     var experience = $("select#experience").val();
-    console.log(goal, schedule, experience);
+
 
     if (goal === "career") {
       if (schedule === "more-forty") {
-        //suggest bootcamp
+        $("#bootcamp").show();
       } else {
-        //suggest online cources
+        $("#online").show();
       }
     } else if (goal === "grow") {
         if (schedule === "less-ten") {
           $("#books").show();
         } else if (schedule === "ten-twenty"){
-          //suggest  classes
+          $("#online").show();
         } else {
-          //suggest classes and networking
+          $("#online").show();
+          $("#networking").show();
         }
     } else { //goal is 'curious'
-      //suggest free online classes
+      $("#online").show();
     }
 
   });
