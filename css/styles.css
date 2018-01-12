@@ -1,0 +1,12 @@
+body {
+  background-color: whitesmoke;
+}
+
+.track {
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+  display: none;
+  /* box-shadow: 2px 2px 10px; */
+}
