@@ -17,22 +17,62 @@
       <form id="survey">
         <!-- name -->
         <div class="form-group">
-          <label for="name"
-        </div>
-        <!-- age -->
-        <div class="form-group">
-        </div>
-        <!-- desired work environment -->
-        <div class="form-group">
-        </div>
-        <!-- most interesting platform -->
-        <div class="form-group">
-        </div>
-        <!-- technical or creative -->
-        <div class="form-group">
+          <label for="name">Name:</label>
+          <input id="name" class="form-control" type="text">
         </div>
 
-        <button>Submit</button>
+        <!-- age -->
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input id="age" class="form-control" type="number">
+        </div>
+
+        <!-- desired work environment -->
+        <div class="form-group">
+          <label for="environment">Desired work environment:</label>
+          <select id="environment" class="form-control">
+            <option value="enterprise">Enterprise company</option>
+            <option value="startup">Startup</option>
+            <option value="agency">Digital agency</option>
+            <option value="freelance">Freelance</option>
+          </select>
+        </div>
+
+        <!-- most interesting platform -->
+        <div class="form-group">
+          <label for="platform">What platform is most interesting to you:</label>
+          <select id="platform" class="form-control">
+            <option value="web">Web</option>
+            <option value="mobile">Mobile Devices</option>
+            <option value="internal">Internal software for large companies</option>
+            <option value="embedded">Embedded software for electronics</option>
+          </select>
+        </div>
+
+        <!-- technical or creative -->
+        <div class="form-group">
+          <label for="skillset">What are you more comfortable working on:</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="skillset" value="technical">
+                Technical problem solving
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="skillset" value="creative">
+                Creative ideation and aesthetics
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="skillset" value="flex">
+                Flexible
+            </label>
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
       </form>
 
       <!-- Divs containing different tracks. Visibility will be toggled to display result -->
