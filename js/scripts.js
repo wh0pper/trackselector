@@ -58,10 +58,10 @@ $(document).ready(function() {
 
   $("form#survey2").submit(function(event) {
     event.preventDefault();
-    var schedule = $("select#schedule").val();
     var goal = $("input:radio[name=goal]:checked").val();
+    var schedule = $("select#schedule").val();
     var experience = $("select#experience").val();
-    console.log(schedule, goal, experience);
+    console.log(goal, schedule, experience);
 
     if (goal === "career") {
       if (schedule === "more-forty") {
@@ -71,7 +71,7 @@ $(document).ready(function() {
       }
     } else if (goal === "grow") {
         if (schedule === "less-ten") {
-          //suggest books
+          $("#books").show();
         } else if (schedule === "ten-twenty"){
           //suggest  classes
         } else {
