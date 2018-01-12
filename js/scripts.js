@@ -34,10 +34,13 @@ $(document).ready(function() {
         $("#ruby").show();
       } else if (platform === "mobile") {
         $("#java").show();
+      } else if (skillset === "creative") {
+        $("#design").show();
       } else {
-        //suggest more research
+        $("#research").show();
       }
     }
+
 
 
   });

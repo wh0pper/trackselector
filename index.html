@@ -29,8 +29,9 @@
 
         <!-- desired work environment -->
         <div class="form-group">
-          <label for="environment">Desired work environment:</label>
-          <select id="environment" class="form-control">
+          <label for="environment">Desired work environment:*</label>
+          <select id="environment" id="validationDefault01" class="form-control" required>
+            <option></option>
             <option value="enterprise">Enterprise company</option>
             <option value="startup">Startup</option>
             <option value="agency">Digital agency</option>
@@ -40,8 +41,9 @@
 
         <!-- most interesting platform -->
         <div class="form-group">
-          <label for="platform">What platform is most interesting to you:</label>
-          <select id="platform" class="form-control">
+          <label for="platform">What platform is most interesting to you:*</label>
+          <select id="platform" id="validationDefault01" class="form-control" required>
+            <option></option>
             <option value="web">Web</option>
             <option value="mobile">Mobile Devices</option>
             <option value="internal">Internal software for large companies</option>
@@ -51,7 +53,7 @@
 
         <!-- technical or creative -->
         <div class="form-group">
-          <label for="skillset">What are you more comfortable working on:</label>
+          <label for="skillset">What are you more comfortable working on:*</label>
           <div class="radio">
             <label>
               <input type="radio" name="skillset" value="technical">
@@ -72,10 +74,21 @@
           </div>
         </div>
 
+        <!-- upcoming availability -->
+
+        <!-- career change or new skills -->
+
+
+
         <button type="submit">Submit</button>
       </form>
 
+
+      <div class="track" id="message">
+        <p>Good news! Anyone can learn programming with the right attitude.</p>
+      </div>
       <!-- Divs containing different tracks. Visibility will be toggled to display result -->
+
       <div class="track" id="ruby">
         <h2>Ruby/Rails</h2>
       </div>
@@ -95,6 +108,13 @@
       <div class="track" id="csharp">
         <h2>C#/.NET</h2>
       </div>
+
+      <div class="track" id="research">
+        <p>Hmm. You're on the right track but it looks like some of your goals may be conflicting. There are many possible career paths to go down with programming knowledge, but it might serve you better to do more research about the type of work you want to be doing.</p>
+      </div>
+
+      <!-- suggests resources for more learning -->
+      <div class="cohort" id =
 
     </div>
   </body>
