@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("form#survey").submit(function(event) {
+  $("form#survey1").submit(function(event) {
     event.preventDefault();
 
     var name = $("input#name").val();
@@ -10,6 +10,17 @@ $(document).ready(function() {
     var result;
 
     $(".track").hide();
+    if (name) {
+      $("span#name").text(", " + name);
+    }
+
+    $("#message").show();
+
+    if (age >= 40) {
+      $("#age-message").show();
+    } else {
+      $("#age-message").hide();
+    }
 
     if (environment === "enterprise") {
       if (platform === "mobile") {
@@ -41,7 +52,10 @@ $(document).ready(function() {
       }
     }
 
+    $("#resource-survey").show();
+  });
 
+  $("form#survey2").submit(function(event) {
 
   });
 });

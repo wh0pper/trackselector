@@ -10,3 +10,11 @@ body {
   display: none;
   /* box-shadow: 2px 2px 10px; */
 }
+
+#resource-survey {
+  display: none;
+}
+
+#age-message {
+  display: none;
+}

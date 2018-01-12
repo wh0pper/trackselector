@@ -11,10 +11,10 @@
   <body>
     <div class="container">
       <h2>What programming language should I learn?</h2>
-      <p>You've decided to learn programming, but are overwhelmed by the variety of languages and platforms out there. This quiz will help you choose which path is best for you.</p>
+      <p>So you've decided to learn programming and are probably overwhelmed by the variety of languages and platforms out there. Take this quiz to help you choose which path is best for you and discover some resources to get started!</p>
 
       <!-- Survey -->
-      <form id="survey">
+      <form id="survey1">
         <!-- name -->
         <div class="form-group">
           <label for="name">Name:</label>
@@ -73,19 +73,12 @@
             </label>
           </div>
         </div>
-
-        <!-- upcoming availability -->
-
-        <!-- career change or new skills -->
-
-
-
         <button type="submit">Submit</button>
       </form>
 
 
       <div class="track" id="message">
-        <p>Good news! Anyone can learn programming with the right attitude.</p>
+        <p><h4>Good news<span id="name"></span>!</h4> Anyone can learn programming with the right attitude. Being strategic about which languages and technologies you plan to learn is a great first step! <span id="age-message">Many people have the misconception that they are too old to start learning about programming, but it's never too late! </span>Based on your interests and goals it looks like you should pursue...</p>
       </div>
       <!-- Divs containing different tracks. Visibility will be toggled to display result -->
 
@@ -113,8 +106,74 @@
         <p>Hmm. You're on the right track but it looks like some of your goals may be conflicting. There are many possible career paths to go down with programming knowledge, but it might serve you better to do more research about the type of work you want to be doing.</p>
       </div>
 
-      <!-- suggests resources for more learning -->
-      <div class="cohort" id =
+
+      <!-- second survery to suggest resources for learning -->
+
+      <div id="resource-survey">
+        <form id="survey2">
+          <!-- schedule/availability -->
+          <div class="form-group">
+            <label for="schedule">How much time are you currently able to dedicate to programming:</label>
+            <select id="schedule" id="validationDefault01" class="form-control" required>
+              <option></option>
+              <option value="less-ten">less than 10 hrs/week</option>
+              <option value="ten-twenty">10-20 hrs/week</option>
+              <option value="twenty-forty">20-40 hrs/week</option>
+              <option value="more-forty">more than 40 hrs/week</option>
+            </select>
+          </div>
+
+          <!-- career change or new skills -->
+          <div class="form-group">
+            <label for="goal">Why do you want to learn programming:</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="goal" value="career">
+                  Change careers
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="skillset" value="grow">
+                  Grow in your current career
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="skillset" value="hobby">
+                  Develop new hobby
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="skillset" value="curious">
+                  Just curious
+              </label>
+            </div>
+          </div>
+
+          <!-- experience -->
+          <div class="form-group">
+            <label for="experience">What is your experience level:</label>
+            <select id="experience" class="form-control">
+              <option></option>
+              <option value="beginner">Beginner – you've never been exposed to programming before</option>
+              <option value="intermediate">Some experience – you've dabbled but aren't sure how to move to the next level</option>
+              <option value="advanced">Experienced – you already know programming but want to expand your skillset</option>
+            </select>
+          </div>
+
+          <button type="submit">Find resources!</button>
+        </form>
+      </div>
+
+
+
+      <div class="resource">
+      </div>
 
     </div>
   </body>
