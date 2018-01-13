@@ -48,34 +48,6 @@ $(document).ready(function() {
     }
 
 
-
-// logic tree starting at 'desired work environment'
-    // if (environment === "enterprise") {
-    //   if (platform === "mobile") {
-    //     $("#java").show();
-    //   } else if (platform === "internal" || platform === "embedded") {
-    //     $("#csharp").show();
-    //   }
-    // } else if (environment === "startup" || environment === "agency") {
-    //   if (platform === "web") {
-    //     $("#ruby").show();
-    //   } else if (platform === "mobile") {
-    //     $("#java").show();
-    //   } else if (skillset === "creative") {
-    //     $("#design").show();
-    //   }
-    // } else if (environment === "freelance") {
-    //   if (platform === "web") {
-    //     $("#ruby").show();
-    //   } else if (platform === "mobile") {
-    //     $("#java").show();
-    //   } else if (skillset === "creative") {
-    //     $("#design").show();
-    //   }
-    // } else {
-    //   $("#research").show();
-    // }
-
     $("#resource-survey").slideDown();
   });
 
@@ -90,21 +62,21 @@ $(document).ready(function() {
 
     if (goal === "career") {
       if (schedule === "more-forty") {
-        $("#bootcamp").show();
+        $("#bootcamp").slideDown();
       } else {
-        $("#online").show();
+        $("#online").slideDown();
       }
     } else if (goal === "grow") {
         if (schedule === "less-ten") {
-          $("#books").show();
+          $("#books").slideDown();
         } else if (schedule === "ten-twenty"){
-          $("#online").show();
+          $("#online").slideDown();
         } else {
-          $("#online").show();
-          $("#networking").show();
+          $("#online").slideDown();
+          $("#networking").slideDown();
         }
     } else { //goal is 'curious'
-      $("#online").show();
+      $("#online").slideDown();
     }
 
   });
