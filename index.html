@@ -11,9 +11,9 @@
   <body>
     <div class="container">
       <h2>What programming language should I learn?</h2>
-      <h6>So you've decided to learn programming and are probably overwhelmed by the variety of languages and platforms out there. Take this quiz to help you choose which path is best for you and discover some resources to get started!</h6>
+      <h6>So you've decided to learn programming and are probably overwhelmed by the variety of languages and platforms out there. Answer these questions to help you choose which path is best for you and discover some resources to get started!</h6>
 
-      <!-- Survey -->
+      <!-- main survey -->
       <form id="survey1">
         <h4>Tell us about yourself:</h4>
         <!-- name -->
@@ -77,7 +77,6 @@
         <button type="submit" class="btn btn-dark">Submit</button>
       </form>
 
-
       <div class="track" id="message">
         <p><h4>Good news<span id="name"></span>!</h4> Anyone can learn programming with the right attitude. Being strategic about which languages and technologies you plan to learn is a great first step! <span id="age-message">Many people have the misconception that they are too old to start learning about programming, but it's never too late! </span>Based on your interests and goals it looks like you should pursue...</p>
       </div>
@@ -85,22 +84,27 @@
 
       <div class="track" id="ruby">
         <h2>Ruby/Rails</h2>
+        <p>Ruby is a popular language for building interactive web applications. Rails is a framework written with Ruby that makes many of the tasks of web app development much simpler.
       </div>
 
       <div class="track" id="php">
         <h2>PHP/Drupal</h2>
+        <p>PHP is the most popular back-end language used for websites today. It is widely used in content management systems such as Drupal.</p>
       </div>
 
       <div class="track" id="java">
         <h2>Java/Android</h2>
+        <p>Java is a very in-demand language. Its most popular uses are for high-performance processing and building Android applications. Java has been popular for a long time and is used in many enterprise-level companies.</p>
       </div>
 
       <div class="track" id="design">
         <h2>CSS/Design<h2>
+        <p>If you're more interested in the look and feel of software you'll want to master CSS and design principles.</p>
       </div>
 
       <div class="track" id="csharp">
         <h2>C#/.NET</h2>
+        <p>C# is most popular for building internal software in larger businesses. The language is backed by Microsoft and is commonly used for business software. .NET is a popular framework used with C#.</p>
       </div>
 
       <div class="track" id="research">
@@ -109,7 +113,6 @@
 
 
       <!-- second survery to suggest resources for learning -->
-
       <div id="resource-survey">
         <form id="survey2">
           <h4>Now let's find some resources!</h4>
@@ -124,14 +127,12 @@
                   Change careers
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="goal" value="grow">
                   Grow in your current career
               </label>
             </div>
-
             <div class="radio">
               <label>
                 <input type="radio" name="goal" value="curious">
@@ -152,11 +153,10 @@
             </select>
           </div>
 
-
           <!-- experience -->
           <div class="form-group">
             <label for="experience">What is your experience level:</label>
-            <select id="experience" class="form-control">
+            <select id="experience" id="validationDefault01" class="form-control" required>
               <option></option>
               <option value="beginner">Beginner – you've never been exposed to programming before</option>
               <option value="intermediate">Some experience – you've dabbled but aren't sure how to move to the next level</option>
@@ -167,8 +167,6 @@
           <button type="submit" class="btn btn-dark">Find resources!</button>
         </form>
       </div>
-
-
 
       <div class="resource" id="bootcamp">
         <h5>Development Bootcamp</h5>
@@ -189,7 +187,6 @@
         <h5>Networking</h5>
         <p>It sounds like you're ready to start building your professional network. Go to meetups and brush up your LinkedIn profile. There will always be more to learn, but getting a job in the field you want is the best way to take your learning to the next level.
       </div>
-
 
     </div>
   </body>

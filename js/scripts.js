@@ -7,11 +7,13 @@ $(document).ready(function() {
     var platform = $("select#platform").val();
     var skillset = $("input:radio[name=skillset]:checked").val();
     $(".track").hide();
+
     if (name) {
       $("span#name").text(", " + name);
     }
 
     $("#message").slideDown();
+
     if (age >= 40) {
       $("#age-message").slideDown();
     } else {
@@ -46,7 +48,6 @@ $(document).ready(function() {
           $("#csharp").slideDown();
         }
     }
-
 
     $("#resource-survey").slideDown();
   });
