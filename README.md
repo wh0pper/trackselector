@@ -10,7 +10,7 @@ This website was created for the code review in week 2 of the Epicodus web devel
 
 ## Setup/Installation Requirements
 
-* access this site at <a href>wh0pper.github.io/trackselector</a>
+* access this site <a href="wh0pper.github.io/trackselector">here</a>
 
 
 ## Support and contact details
